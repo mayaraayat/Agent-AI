@@ -1,0 +1,6 @@
+# Ignore Environment file
+.env
+myenv*
+
+# Ignore gradio logs
+.gradio
