@@ -1,6 +1,12 @@
 # Ignore Environment file
 .env
-myenv*
-
 # Ignore gradio logs
 .gradio
+
+
+# Ignore Folders
+__pycache__/
+myenv/  
+
+# Ignore Data folders
+uploaded*

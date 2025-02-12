@@ -146,6 +146,9 @@ class GradioUI:
             
             # Only move if necessary (avoid SameFileError)
             new_file_path = os.path.join(self.file_upload_folder, os.path.basename(file_path))
+
+            if os.path.exists(file_path):
+                shutil.copy(file_path, new_file_path) 
             if file_path != new_file_path:
                 shutil.move(file_path, new_file_path)  # Move instead of copy
             
