@@ -1,12 +1,24 @@
 # Ignore Environment file
 .env
-# Ignore gradio logs
+
+# Ignore Gradio logs
 .gradio
 
-
-# Ignore Folders
+# Ignore Python cache directories everywhere
 __pycache__/
-myenv/  
+**/__pycache__/   # Ensure all __pycache__ folders are ignored
+**/*.pyc          # Ignore compiled Python bytecode files
+**/*.pyo
+**/*.pyd
 
-# Ignore Data folders
-uploaded*
+# Ignore Virtual Environments
+myenv/
+
+# Ignore uploaded files
+uploaded*/
+
+# Ignore any pycache-related files inside tools
+tools/__pycache__/
+tools/*.pyc
+tools/*.pyo
+tools/*.pyd
